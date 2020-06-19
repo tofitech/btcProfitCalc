@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Bitcoin Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" 
+            data-currencyid="1"  data-base="USD" data-secondary="" data-ticker="true" data-rank="true" data-marketcap="true"
+             data-volume="true" data-statsticker="true" data-stats="USD"></div>
+            <img src="crypto.png" alt="Bitcoin" class="header__logo">
+            <h1 class="header__heading">Crypto Profit Calculator</h1>
+        </div>
+        <div class="price">
+            <div class="price__bought">
+                <label class="price__label">Crypto Coins/USD when bought</label>
+                <input type="number" class="price__input price__input--bought" id="priceBought" placeholder="Price in USD">
+            </div>
+            <div class="price__now">
+                <label class="price__label">Crypto Coins/USD today</label>
+                <input type="number" class="price__input price__input--now" id="priceNow" placeholder="Price in USD">
+            </div>
+        </div>
+
+        <div class="investment">
+            <label class="investment__text">How many Crypto Coins did you buy?</label>
+            <input type="number" class="investment__btc" id="btcOwn" placeholder="Amount of Coins">
+            <button class="investment__btn">GO</button>
+        </div>
+
+        <p class="result">
+            Please fill all fields to see results.
+        </p>
+    </div>
+
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
